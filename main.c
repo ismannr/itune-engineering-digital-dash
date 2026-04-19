@@ -4,7 +4,7 @@
 //
 
 #include "lvgl/lvgl.h"
-#include "components/ui.h"
+#include "ui/ui.h"
 
 // =========================================================================
 // --- SIMULATOR ONLY START ---
