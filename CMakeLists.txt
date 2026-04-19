@@ -24,8 +24,8 @@ add_subdirectory(lvgl)
 target_include_directories(lvgl PUBLIC ${PROJECT_SOURCE_DIR} ${SDL2_INCLUDE_DIRS})
 
 add_executable(main main.c mouse_cursor_icon.c
-        ui/ui.c
-        ui/ui.h)
+        components/ui.c
+        components/ui.h)
 
 target_compile_definitions(main PRIVATE LV_CONF_INCLUDE_SIMPLE)
 target_link_libraries(main lvgl lvgl::examples lvgl::demos lvgl::thorvg ${SDL2_LIBRARIES} m pthread)
