@@ -9,6 +9,3 @@ demo
 build/
 bin/
 cmake/
-cmake-build-debug/
-cmake-build-release/
-.idea/
