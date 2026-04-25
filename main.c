@@ -60,6 +60,10 @@ int main(int argc, char **argv)
     /* 3. Initialize your custom UI */
     ui_init();
 
+    // This will draw a border around your active screen so you can see where it actually is
+    lv_obj_set_style_border_color(lv_screen_active(), lv_palette_main(LV_PALETTE_RED), 0);
+    lv_obj_set_style_border_width(lv_screen_active(), 5, 0);
+
     /* 4. The Main Loop */
     while(1) {
         /* Periodically call the lv_timer_handler to render graphics and read touches */

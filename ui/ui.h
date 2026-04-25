@@ -1,13 +1,21 @@
-//
-// Created by Isyman Nurfauzan Rustama on 4/19/2026.
-// Copyright (c) 2026 I-Tune Engineering. All rights reserved.
-//
+#ifndef EEZ_LVGL_UI_GUI_H
+#define EEZ_LVGL_UI_GUI_H
 
+#include <lvgl/lvgl.h>
 
-#ifndef UI_H
-#define UI_H
-#include "lvgl/lvgl.h"
+#include "screens.h"
 
-void ui_init(void);
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-#endif //UI_H
+void ui_init();
+void ui_tick();
+
+void loadScreen(enum ScreensEnum screenId);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // EEZ_LVGL_UI_GUI_H
